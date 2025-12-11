@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # OPS245 Assignment 1
 # Usage: ./userservice.bash
