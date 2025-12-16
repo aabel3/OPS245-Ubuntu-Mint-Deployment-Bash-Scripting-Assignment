@@ -43,9 +43,6 @@ Attach screenshot of VM settings showing name, memory, CPU, and disk configurati
   - Updates and Other Software:
     - ✅ Select "Minimal Installation" (Important!)
     - ✅ Download updates while installing
-
-Attach screenshot of "Minimal Installation" selected on Updates and Other Software screen
-
 + Installation Type: Use default (Erase disk and install Ubuntu)
 + Who are you?:
   - Your name: Your full name
