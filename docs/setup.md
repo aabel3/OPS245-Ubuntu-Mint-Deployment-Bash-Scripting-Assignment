@@ -148,7 +148,7 @@ Attach screenshot of Chromium browser open or terminal showing which chromium-br
 
 # Step 10: Create First User (asmith12)
 ```
-sudo useradd -m -c "Alex Smith" asmith12
+useradd -m -c "Alex Smith" -s "/usr/bin/bash" asmith12
 ```
 + Command breakdown:
   - -m : Create home directory
@@ -163,7 +163,7 @@ sudo passwd asmith12
 
 # Step 11: Create Second User (jjones34)
 ```
-sudo useradd -m -c "Jessica Jones" jjones34
+useradd -m -c "Jessica Jones" -s "/usr/bin/bash" jjones34
 ```
 + Set password:
 ```
