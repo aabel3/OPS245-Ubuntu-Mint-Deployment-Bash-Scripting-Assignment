@@ -1,1 +1,106 @@
+The UID of user asmith12 is: 1001
+Unit snap-firewfox-4793.mount could not be found.
+Unit snap-firefox-4793.mount could not be found.
+● snapd.service - Snap Daemon
+     Loaded: loaded (/usr/lib/systemd/system/snapd.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2025-12-17 08:43:05 EST; 50min ago
+TriggeredBy: ● snapd.socket
+   Main PID: 4807 (snapd)
+      Tasks: 11 (limit: 4604)
+     Memory: 908.4M (peak: 1.7G)
+        CPU: 3min 44.656s
+     CGroup: /system.slice/snapd.service
+             └─4807 /usr/lib/snapd/snapd
 
+Dec 17 08:43:38 testuser-ubu snapd[4807]: services.go:1152: RemoveSnapServices - disabling snap.firmware-updater.firmware-notifier.service
+Dec 17 08:43:39 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+Dec 17 08:43:42 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+Dec 17 08:44:38 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+Dec 17 08:44:42 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+Dec 17 08:44:52 testuser-ubu snapd[4807]: storehelpers.go:916: cannot refresh: snap has no updates available: "core22", "firefox", "firmware-updater", "snapd"
+Dec 17 08:46:13 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+Dec 17 08:53:05 testuser-ubu snapd[4807]: devicemgr.go:2796: no NTP sync after 10m0s, trying auto-refresh anyway
+Dec 17 08:55:34 testuser-ubu snapd[4807]: spec.go:312: renaming mount entry for directory "/snap/chromium/3335/gpu-2404" to "/snap/chromium/3335/gpu-2404-2" to avoid a clash
+Dec 17 08:55:35 testuser-ubu snapd[4807]: backend.go:285: reloading profiles of snap-confine provided by the system snap
+● accounts-daemon.service - Accounts Service
+     Loaded: loaded (/usr/lib/systemd/system/accounts-daemon.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-12-16 17:32:43 EST; 16h ago
+   Main PID: 735 (accounts-daemon)
+      Tasks: 4 (limit: 4604)
+     Memory: 6.9M (peak: 13.6M)
+        CPU: 2.630s
+     CGroup: /system.slice/accounts-daemon.service
+             └─735 /usr/libexec/accounts-daemon
+
+Dec 17 09:00:13 testuser-ubu adduser[9361]: Adding user `jjones34' to group `plugdev' ...
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to group 'plugdev'
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to shadow group 'plugdev'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group sambashare doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group libvirtd doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9370]: info: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu adduser[9370]: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: request by system-bus-name::1.179 [cinnamon-settings-users pid:9150 uid:0]: change password mode of user 'jjones34' (1002) to 2
+Dec 17 09:00:14 testuser-ubu passwd[9372]: password for 'jjones34' changed by 'root'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9372]: passwd: password changed.
+The UID of user asmith12 is: 1001
+● accounts-daemon.service - Accounts Service
+     Loaded: loaded (/usr/lib/systemd/system/accounts-daemon.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-12-16 17:32:43 EST; 16h ago
+   Main PID: 735 (accounts-daemon)
+      Tasks: 4 (limit: 4604)
+     Memory: 6.9M (peak: 13.6M)
+        CPU: 2.632s
+     CGroup: /system.slice/accounts-daemon.service
+             └─735 /usr/libexec/accounts-daemon
+
+Dec 17 09:00:13 testuser-ubu adduser[9361]: Adding user `jjones34' to group `plugdev' ...
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to group 'plugdev'
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to shadow group 'plugdev'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group sambashare doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group libvirtd doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9370]: info: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu adduser[9370]: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: request by system-bus-name::1.179 [cinnamon-settings-users pid:9150 uid:0]: change password mode of user 'jjones34' (1002) to 2
+Dec 17 09:00:14 testuser-ubu passwd[9372]: password for 'jjones34' changed by 'root'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9372]: passwd: password changed.
+Error: User 'ness' not found.
+The UID of user asmith12 is: 1001
+The UID of user jjones34 is: 1002
+Unit firefox-2002.service could not be found.
+● accounts-daemon.service - Accounts Service
+     Loaded: loaded (/usr/lib/systemd/system/accounts-daemon.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-12-16 17:32:43 EST; 16h ago
+   Main PID: 735 (accounts-daemon)
+      Tasks: 4 (limit: 4604)
+     Memory: 6.9M (peak: 13.6M)
+        CPU: 2.728s
+     CGroup: /system.slice/accounts-daemon.service
+             └─735 /usr/libexec/accounts-daemon
+
+Dec 17 09:00:13 testuser-ubu adduser[9361]: Adding user `jjones34' to group `plugdev' ...
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to group 'plugdev'
+Dec 17 09:00:13 testuser-ubu usermod[9363]: add 'jjones34' to shadow group 'plugdev'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group sambashare doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: Extra admin group libvirtd doesnâ€™t exist: not adding the user to it
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9370]: info: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu adduser[9370]: The user `jjones34' is already a member of `users'.
+Dec 17 09:00:14 testuser-ubu accounts-daemon[735]: request by system-bus-name::1.179 [cinnamon-settings-users pid:9150 uid:0]: change password mode of user 'jjones34' (1002) to 2
+Dec 17 09:00:14 testuser-ubu passwd[9372]: password for 'jjones34' changed by 'root'
+Dec 17 09:00:14 testuser-ubu accounts-daemon[9372]: passwd: password changed.
+The UID of user asmith12 is: 1001
+Error: User 'nonexistentuser-1998' not found.
+Unit ssh.service could not be found.
+Unit ssh.service could not be found.
+● accounts-daemon.service - Accounts Service
+     Loaded: loaded (/usr/lib/systemd/system/accounts-daemon.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2025-12-17 10:51:21 EST; 11min ago
+   Main PID: 865 (accounts-daemon)
+      Tasks: 4 (limit: 4604)
+     Memory: 5.2M (peak: 7.3M)
+        CPU: 173ms
+     CGroup: /system.slice/accounts-daemon.service
+             └─865 /usr/libexec/accounts-daemon
+
+Dec 17 10:51:21 testuser-ubu systemd[1]: Starting accounts-daemon.service - Accounts Service...
+Dec 17 10:51:21 testuser-ubu accounts-daemon[865]: started daemon version 23.13.9
+Dec 17 10:51:21 testuser-ubu systemd[1]: Started accounts-daemon.service - Accounts Service.
