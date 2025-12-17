@@ -7,7 +7,7 @@ hmod +x sysinfo.sh
 + Verify permissions:
 
 ```
-hls -l sysinfo.sh
+ls -l sysinfo.sh
 ```
 + Expected output: **-rwxr-xr-x 1 username username 3456 Dec 1 10:30 sysinfo.bash**
 <img width="1366" height="768" alt="Screenshot from 2025-12-17 11-00-14" src="https://github.com/user-attachments/assets/694c107a-225d-4f80-82e4-287b45df5c57" />
