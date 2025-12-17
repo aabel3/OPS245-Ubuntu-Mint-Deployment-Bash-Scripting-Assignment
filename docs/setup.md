@@ -33,8 +33,7 @@ virt-manager
 + Name the VM: **username-ubu**
 + Select your existing virtual network
 + Click "Finish"
-
-Attach screenshot of VM settings showing name, memory, CPU, and disk configuration
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 16-43-43" src="https://github.com/user-attachments/assets/286e81a7-b4e9-4967-9935-8c4cbb3d3fac" />
 
 # Step 3: Install Ubuntu
 + **During Installation:**
@@ -50,7 +49,7 @@ Attach screenshot of VM settings showing name, memory, CPU, and disk configurati
   - Username: Your **Seneca username** (e.g., aabel3)
   - Password: Create a strong password
   - Select "Require my password to log in"
-Attach screenshot of user creation screen showing username and computer name
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 16-48-25" src="https://github.com/user-attachments/assets/62e0e393-5012-420a-bf16-de0ece27deea" />
 + Wait for installation to complete and reboot when prompted.
 
 # Step 4: Verify Ubuntu Installation
@@ -69,7 +68,7 @@ uname -a
 ```
 lsb_release -a
 ```
-Attach screenshot of terminal showing hostname command output with correct hostname
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 17-15-35" src="https://github.com/user-attachments/assets/48b20175-c907-4ce5-9427-417702f0f9b0" />
 
 # Step 5: Set Root Password
 ```
@@ -87,14 +86,14 @@ su -
 whoami
 ```
 + Expected output: root
-Attach screenshot of terminal showing su - and whoami commands proving root login work
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 17-16-22" src="https://github.com/user-attachments/assets/fc432464-ec39-4838-8008-9fe0c3a630b8" />
 
 # Step 6: Update Ubuntu System
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 + This may take 5-10 minutes.
-Attach screenshot of terminal showing successful completion of system update
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 17-20-49" src="https://github.com/user-attachments/assets/a72365c3-4914-47ef-a77a-2c6fb05ce0fe" />
 
 # Step 7: Install Cinnamon Desktop Environment
 + Search for Cinnamon packages:
@@ -115,8 +114,7 @@ sudo reboot
   - Click the gear icon (⚙️) in the bottom right
   - Select "Cinnamon"
   - Enter your password and log in
-
-Attach screenshot of login screen showing Cinnamon selection in gear menu
+<img width="1366" height="768" alt="Screenshot from 2025-12-16 17-33-02" src="https://github.com/user-attachments/assets/920f07a0-832e-497c-9188-c2bb16b12e0c" />
 
 # Step 8: Verify Cinnamon Desktop
 + Open terminal and check:
@@ -144,7 +142,7 @@ which chromium-browser
 ```
 chromium-browser &
 ```
-Attach screenshot of Chromium browser open or terminal showing which chromium-browser output
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 08-43-00" src="https://github.com/user-attachments/assets/00daf02f-cc81-4b6b-b067-8c9899779bd9" />
 
 # Step 10: Create First User (asmith12)
 ```
@@ -187,7 +185,7 @@ ls -la /home/
   - asmith12
   - jjones34
   - your username
-Attach screenshot of terminal showing grep command output for both users in /etc/passwd
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-01-28" src="https://github.com/user-attachments/assets/81b8784d-836b-4ad4-99e9-ec09462e258f" />
 
 # Step 13: Test User Logins
 + Test asmith12:
@@ -207,7 +205,6 @@ su - jjones34
 whoami
 ```
 + Expected output: **jjones34**
-Attach screenshot of terminal showing successful login tests for both asmith12 and jjones34
 
 # Step 14: Create Linux Mint Virtual Machine
 + **VM Specifications:**
@@ -231,7 +228,7 @@ virt-manager
 + Name the VM: **username-mint**
 + Select your existing virtual network
 + Click "Finish"
-Attach screenshot of Mint VM settings showing name, memory, CPU, and disk configuration
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-21-26" src="https://github.com/user-attachments/assets/37fdcc52-9046-423d-b7a5-7641a323e2a5" />
 
 # Step 15: Install Linux Mint
 + **During Installation:**
@@ -242,8 +239,6 @@ Attach screenshot of Mint VM settings showing name, memory, CPU, and disk config
   - Multimedia Codecs:
     - ❌ DO NOT check "Install multimedia codecs"
     - Leave the box UNCHECKED
-Attach screenshot of installation screen with multimedia codecs checkbox UNCHECKED
-
 + Installation Type: Select "Erase disk and install Linux Mint"
 + Timezone: Select your timezone
 + Who are you?:
@@ -252,7 +247,8 @@ Attach screenshot of installation screen with multimedia codecs checkbox UNCHECK
   - Username: Your **Seneca username** (e.g., aabel3)
   - Password: Create a strong password
   - Select "Require my password to log in"
-Attach screenshot of user creation screen showing username and computer name
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-26-14" src="https://github.com/user-attachments/assets/4ad022f1-b84b-4380-9dc0-780641a37302" />
+
 + Wait for installation to complete and reboot when prompted.
 
 # Step 16: Verify Mint Installation
@@ -265,7 +261,7 @@ hostname
 cat /etc/os-release | grep PRETTY_NAME
 ```
 + Expected output: **PRETTY_NAME="Linux Mint 21.3"**
-Attach screenshot of terminal showing hostname command output with correct hostname
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-41-42" src="https://github.com/user-attachments/assets/550bce26-6082-4c97-8b06-4b7ac9002a15" />
 
 # Step 17: Set Root Password on Mint
 ```
@@ -283,7 +279,8 @@ su -
 whoami
 ```
 + Expected output: root
-Attach screenshot of terminal showing root login verification on Mint
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-42-52" src="https://github.com/user-attachments/assets/ab4b12ed-ddbf-438d-bcd0-50db6caf58f3" />
+
 
 # Step 18: Update Mint System
 ```
@@ -292,7 +289,7 @@ sudo apt update && sudo apt upgrade -y
 + This may take 5-10 minutes.
 Attach screenshot of terminal showing successful completion of system update
 
-# Step 19: Install xplayer
+# Step 19: Install xplayer (Celluloid is the modern version of xplayer)
 ```
 sudo apt install xplayer -y
 ```
@@ -301,7 +298,7 @@ sudo apt install xplayer -y
 which xplayer
 ```
 + Expected output: **/usr/bin/xplayer**
-Attach screenshot of terminal showing xplayer installation verification
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 10-10-26" src="https://github.com/user-attachments/assets/25ed6efb-800f-4e70-970c-161c5359c5f8" />
 
 # Step 20: Create BASH Script on Ubuntu VM
 + On your Ubuntu VM, navigate to home directory:
@@ -330,7 +327,8 @@ chmod +x sysinfo.bash
 ls -l sysinfo.bash
 ```
 + Expected output: **-rwxr-xr-x 1 username username 3456 Dec 1 10:30 sysinfo.sh**
-Attach screenshot of terminal showing script permissions with ls -l command
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-35-10" src="https://github.com/user-attachments/assets/c0487228-6dbf-4fcc-a79d-12a95cb9ab68" />
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 09-35-37" src="https://github.com/user-attachments/assets/3cc908c7-1011-497b-a386-b0d453c54d94" />
 
 Step 21: Create Submission Document
 + Create a document named ops245A1-yourusername.docx or .pdf containing:
