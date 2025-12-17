@@ -1,77 +1,85 @@
+# ⚠️ Test Cases
 
-Step 21: Make Script Executable
-bashchmod +x sysinfo.sh
-Verify permissions:
-bashls -l sysinfo.sh
-Expected output: -rwxr-xr-x 1 username username 3456 Dec 1 10:30 sysinfo.sh
-Attach screenshot of terminal showing script permissions with ls -l command
-Step 22: Test Script - Run Without Sudo (Should Fail)
-bash./sysinfo.sh
-Expected output:
+# Step 1: Make Script Executable
+```
+hmod +x sysinfo.sh
+```
++ Verify permissions:
+
+```
+hls -l sysinfo.sh
+```
++ Expected output: **-rwxr-xr-x 1 username username 3456 Dec 1 10:30 sysinfo.bash**
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 11-00-14" src="https://github.com/user-attachments/assets/694c107a-225d-4f80-82e4-287b45df5c57" />
+
+# Step 2: Test Script - Run Without Sudo (Should Fail)
+```
+./sysinfo.sh
+```
++ Expected output:
 ERROR: This script must be run with sudo
 Usage: sudo ./sysinfo.sh
-Attach screenshot of error message when running script without sudo
-Step 23: Test Script - Invalid Input Handling
-bashsudo ./sysinfo.sh
-When prompted, enter: X
-Expected behavior: Script displays error and asks again
-Then enter: 5
-Expected behavior: Script displays error and asks again
-Finally enter: A
-Expected behavior: Script accepts input and continues
-Attach screenshot of terminal showing invalid input handling (entering X, then 5, then A)
-Step 24: Test Script - Option A with Valid User
-bashsudo ./sysinfo.sh
-Selections:
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 11-01-54" src="https://github.com/user-attachments/assets/dc336ae6-a593-40ba-afc6-c315b6c54059" />
 
-Choice: A
-Username: <your-username> (e.g., jsmith123)
 
-Expected output:
-SUCCESS: User 'jsmith123' found!
+# Step 3: Test Script - Invalid Input Handling
+```
+sudo ./sysinfo.sh
+```
++ When prompted, enter: **X**
+     - Expected behavior: Script displays error and asks again
++ Then enter: 5
+     - Expected behavior: Script displays error and asks again
++ Finally enter: A
+     - Expected behavior: Script accepts input and continues
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 11-02-16" src="https://github.com/user-attachments/assets/1f1694fb-a738-4b60-9705-4cf81fba50dc" />
 
-User ID (UID): 1000
+# Step 4: Test Script - Option A with Valid User
+```
+sudo ./sysinfo.bash
+```
++ Selections:
+      - Choice: A
+      - Username: <your-username> (e.g., jsmith123)
 
-Complete user information:
-uid=1000(jsmith123) gid=1000(jsmith123) groups=...
-Attach screenshot of script output showing Option A with valid username
-Step 25: Test Script - Option A with Invalid User
-bashsudo ./sysinfo.sh
-Selections:
++ Expected output:
+     - Expected behavior: The UID of user **(username)** is: **100(1,2,0)**
+ <img width="1366" height="768" alt="Screenshot from 2025-12-17 11-02-16" src="https://github.com/user-attachments/assets/f74333e5-dffc-4dfb-8017-4ee4f67c9e46" />
 
-Choice: A
-Username: nonexistentuser999
 
-Expected output:
-ERROR: User 'nonexistentuser999' does not exist on this system.
-Script will now exit.
-Attach screenshot of script output showing Option A with invalid username and error message
-Step 26: Test Script - Option B with Valid Service
-bashsudo ./sysinfo.sh
-Selections:
+#  Step 5: Test Script - Option A with Invalid User
+```
+sudo ./sysinfo.bash
+```
++ Selections:
+ - Choice: **A**
+ - Username: **nonexistentuser999**
++ Expected output:
+  - ERROR: User 'nonexistentuser999' not found.
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 11-02-16" src="https://github.com/user-attachments/assets/37ca0e39-2c3d-4047-87fe-9c037663bd69" />
 
-Choice: B
-Service: ssh
+# Step 6: Test Script - Option B with Valid Service
+```
+sudo ./sysinfo.sh
+```
++ Selections:
+ - Choice: **B**
+  - Service: **accounts-daemon.service**
 
-Expected output:
++ Expected output:
 ● ssh.service - OpenBSD Secure Shell server
      Loaded: loaded (/lib/systemd/system/ssh.service; enabled; ...)
      Active: active (running) since ...
 ...
-Attach screenshot of script output showing Option B with valid service (ssh)
-Step 27: Test Script - Option B with Invalid Service
-bashsudo ./sysinfo.sh
-Selections:
+ <img width="1366" height="768" alt="Screenshot from 2025-12-17 11-03-22" src="https://github.com/user-attachments/assets/731cdb48-e832-4cc5-be75-17e4300b3910" />
 
-Choice: B
-Service: fakeservice123
-
-Expected output:
-Unit fakeservice123.service could not be found.
-Attach screenshot of script output showing Option B with invalid service and error message
-Step 28: Verify Output File
-bashcat sysinfo-output.txt
-Expected: File contains all output from your last test
-bashls -lh sysinfo-output.txt
-Expected: File exists and has content
-Attach screenshot of terminal showing contents of sysinfo-output.txt file
+# Step 7: Test Script - Option B with Invalid Service
+```
+sudo ./sysinfo.sh
+```
++ Selections:
+ - Choice: B
+- Service: ssh
++ Expected output:
+ - Unit ssh.service could not be found.
+<img width="1366" height="768" alt="Screenshot from 2025-12-17 11-02-34" src="https://github.com/user-attachments/assets/8319d301-4587-44c5-9b2d-f87986c69e52" />
